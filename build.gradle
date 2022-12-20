@@ -1,4 +1,5 @@
 plugins {
+    // 高版本的org.jetbrains.intellij需要高版本的gradle，因此设置低版本的org.jetbrains.intellij
     id 'org.jetbrains.intellij' version '0.4.21'
     id 'org.jetbrains.kotlin.jvm' version '1.3.72'
 }
@@ -17,6 +18,8 @@ dependencies {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version = '2021.3.3'
+    localPath '/Applications/Android Studio.app/Contents'
+    plugins = ['Kotlin','android','git4idea']
 }
 patchPluginXml {
     changeNotes = """
