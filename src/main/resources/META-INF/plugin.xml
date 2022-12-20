@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.xiaozhezhe.PluginDemo</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>YZPlugin</name>
+    <vendor email="731180001@qq.com" url="https://github.com/LucasYang7">Xiaozhezhe</vendor>
 
     <description><![CDATA[
     Enter short description for your plugin here.<br>
