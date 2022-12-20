@@ -20,5 +20,9 @@
 
     <actions>
         <!-- Add your actions here -->
+        <action id="HelloWorldActionID" class="com.xiaozhezhe.plugin.actions.HelloWorldAction" text="HelloWorldAction"
+                description="First Action">
+            <add-to-group group-id="HelpMenu" anchor="first"/>
+        </action>
     </actions>
 </idea-plugin>

@@ -15,11 +15,16 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
 }
 
+// 设置java-compiler-ant-tasks的版本：https://github.com/JetBrains/gradle-intellij-plugin/issues/369#issuecomment-893311439
+instrumentCode {
+    compilerVersion = "213.7172.25"
+}
+
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version = '2021.3.3'
     localPath '/Applications/Android Studio.app/Contents'
-    plugins = ['Kotlin','android','git4idea']
+    plugins = ['Kotlin', 'android', 'git4idea']
 }
 patchPluginXml {
     changeNotes = """
